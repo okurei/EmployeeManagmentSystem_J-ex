@@ -13,22 +13,23 @@ public class EmployeeManagement {
                 employeeList = bufferedReader.lines()
                         .map(line-> {
                             String[] data = line.split(", ");
-                            return new Employee(
+                            try{return new Employee(
                                 Integer.parseInt(data[0].trim()),
                                 data[1].trim(),
                                 Integer.parseInt(data[2].trim()),
                                 data[3].trim(),
                                 Double.parseDouble(data[4].trim())
-                            );
+                            );}catch (NumberFormatException e){return null;}
                         }).toList();
 
             }catch (IOException e){
                 System.out.println("Error 101");
             }
         }
+        int counter = 0;
         for (Employee employee : employeeList){
-            System.out.println(employee);
+            counter++;
+            System.out.println("Line: " + counter+"\n" + employee);
         }
     }
-
 }
