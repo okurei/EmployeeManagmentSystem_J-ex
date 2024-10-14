@@ -6,13 +6,13 @@ public class Employee {
     private double salary;
     private static int idBase = 100;
 
-    public Employee(String name, int age, String department, double salary) {
+    public Employee(int id,String name, int age, String department, double salary) {
         this.name = name;
         this.age = age;
         this.department = department;
         this.salary = salary;
         idBase++;
-        this.id = idBase;
+        this.id = idBase + id;
     }
     public void setSalary(double percentage){
         this.salary = salary * (1 + (percentage/100));
@@ -20,12 +20,12 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee: " +
-                "id: " + id +
-                ", name:'" + name + '\'' +
-                ", age: " + age +
-                ", department: '" + department + '\'' +
-                ", salary: " + salary +
+        return "Employee " +
+                "ID: " + id +
+                ", Name: " + name +
+                ", Age: " + age +
+                ", Department: " + department +
+                ", Salary: " + salary +
                 ".\n";
     }
 
