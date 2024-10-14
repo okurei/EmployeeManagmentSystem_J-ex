@@ -1,0 +1,15 @@
+1, Alice, 30, IT, 75000.0
+2, Bob, 28, HR, 55000.0
+3, Charlie, 25, IT, 65000.0
+4, David, 35, Finance, 85000.0
+5, Eve, 40, HR, 48000.0
+6, Tom, 45, Finance, 90000.0
+7, Sara, 32, IT, 72000.0
+8, Paul, 38, HR, 51000.0
+9, Mia, 29, IT, 67000.0
+10, John, 42, Finance, 83000.0
+11, Anna, 26, IT, 69000.0
+12, Mike, 31, HR, 53000.0
+13, Laura, 34, Finance, 77000.0
+14, James, 27, IT, 71000.0
+15, Emma, 36, HR, 52000.0
