@@ -17,6 +17,19 @@ public class Employee {
     public void setSalary(double percentage){
         this.salary = salary * (1 + (percentage/100));
     }
+    public String getDepartment(){
+        return department;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    public String getName(){
+        return name;
+    }
+    public double getSalary(){
+        return salary;
+    }
 
     @Override
     public String toString() {
