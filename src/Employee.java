@@ -1,8 +1,8 @@
 public class Employee {
-    private int id;
-    private String name;
-    private int age;
-    private String department;
+    private final int id;
+    private final String name;
+    private final int age;
+    private final String department;
     private double salary;
     private static int idBase = 100;
 
